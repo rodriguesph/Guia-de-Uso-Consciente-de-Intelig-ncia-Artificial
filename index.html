@@ -293,6 +293,7 @@ table.glossario tr:nth-child(even) td { background: var(--azul-claro); }
 .tri-col.talvez ul li::before { content: "?"; color: var(--amarelo); }
 .tri-col.nunca ul li::before { content: "✗"; color: var(--vermelho); }
 /* ─── Fluxo de encaminhamento ─── */
+.fluxo.fluxo-2 { grid-template-columns: 1fr 1fr; }
 .fluxo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -443,7 +444,7 @@ table.ferramentas tr:nth-child(even) td { background: #f7fafc; }
   .tricolor { grid-template-columns: 1fr 1fr 1fr; }
 }
 @media (max-width: 720px) {
-  .tricolor, .fluxo { grid-template-columns: 1fr; }
+  .tricolor, .fluxo, .fluxo.fluxo-2 { grid-template-columns: 1fr; }
   .capa h1 { font-size: 32px; }
   .page { padding: 32px 20px; }
 }
@@ -974,7 +975,7 @@ table.simetria tr:nth-child(even) td:not(.dim) { background: #f8fbfd; }
   <p>Propor que estudantes usem IA numa atividade exige que você garanta, antes, que todos têm acesso à ferramenta necessária. Desequilíbrio de acesso não pode se tornar desequilíbrio de desempenho.</p>
 
   <h3>O que nunca deve ser feito</h3>
-  <p>A lista do nunca deve não existe para desconfiar de você. Existe para proteger os estudantes, a qualidade do ensino e a integridade da instituição.</p>
+  <p>A lista do "nunca deve" não existe para desconfiar de você. Existe para proteger os estudantes, a qualidade do ensino e a integridade da instituição.</p>
   <p>Dois pontos merecem destaque. O primeiro é sobre <strong>dados</strong>: nunca insira informações que identifiquem estudantes em ferramentas de IA externas. Isso inclui nome, matrícula, notas e qualquer combinação que permita identificar um aluno específico. É uma questão de proteção de dados e de respeito à privacidade.</p>
   <p>O segundo é sobre <strong>evidência</strong>: ferramentas de detecção de IA têm índice de falso positivo elevado. Acusar um estudante de uso indevido com base apenas no resultado de uma dessas ferramentas é injusto e potencialmente danoso. Use seu julgamento pedagógico, sua leitura do trabalho, sua conversa com o estudante.</p>
 
@@ -1058,12 +1059,18 @@ table.simetria tr:nth-child(even) td:not(.dim) { background: #f8fbfd; }
     <li>Dúvidas sobre casos concretos podem ser encaminhadas à coordenação de área ou ao DEA.</li>
   </ul>
   
-  <h3>E quando o descumprimento é do professor?</h3>
-  <p>A coerência institucional exige que as expectativas valham para todos. O professor que utilizar IA sem declarar no Plano de Ensino, ou que entregar aos estudantes materiais com erros provenientes de IA não verificada, passa por um fluxo de três etapas, sempre começando pelo diálogo:</p>
-  <div class="fluxo">
-    <div class="etapa"><div class="num">1</div><h5>Conversa com a coordenação</h5><p>Diálogo em caráter informativo entre a coordenação de curso e o professor, com orientação sobre as diretrizes deste guia.</p></div>
-    <div class="etapa"><div class="num">2</div><h5>Conversa com o DEA</h5><p>Em caso de reincidência, o Departamento de Ensino e Aprendizagem conversa com o professor, ainda em caráter informativo, com registro.</p></div>
-    <div class="etapa"><div class="num">3</div><h5>Advertência da Diretoria</h5><p>Persistindo a situação, a Diretoria de Graduação emite advertência formal, conforme as normas institucionais.</p></div>
+  <h3>E quando a situação envolve o professor?</h3>
+  <p>A coerência institucional exige que as expectativas valham para todos. Se um material chegou à turma com erro proveniente de IA não verificada, ou se o uso de IA não foi declarado no Plano de Ensino, o caminho aqui não é punitivo. É de conversa e correção.</p>
+  <div class="fluxo fluxo-2">
+    <div class="etapa"><div class="num">1</div><h5>Conversa com a coordenação</h5><p>O coordenador de curso procura você para entender o que aconteceu e alinhar as orientações deste guia. É um diálogo, não uma cobrança.</p></div>
+    <div class="etapa"><div class="num">2</div><h5>Conversa com o DEA</h5><p>Se a situação se repetir, o Departamento de Ensino e Aprendizagem entra na conversa para apoiar na revisão do processo de trabalho.</p></div>
+  </div>
+  <div class="modelo">
+    <div class="modelo-titulo">O GTIA está aqui para isso</div>
+    <div class="modelo-corpo">
+      <p>Em qualquer momento, antes ou depois de um problema aparecer, o Grupo de Trabalho em Inovação Acadêmica está disponível para orientar. Dúvida sobre como declarar o uso, como verificar um conteúdo antes de levar para a aula, qual ferramenta usar ou como redesenhar uma atividade: é só procurar o grupo.</p>
+      <p>A lógica deste guia é a de corrigir o que precisa ser corrigido, com alguém ao seu lado. Ninguém aqui está sozinho nesse aprendizado, e o GTIA existe exatamente para isso.</p>
+    </div>
   </div>
 <div class="voltar-wrap"><a class="voltar" href="#sumario"><span class="seta">&#8593;</span> Voltar ao sumário</a></div>
 </div></section>
